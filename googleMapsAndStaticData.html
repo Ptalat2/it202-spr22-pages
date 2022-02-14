@@ -59,8 +59,9 @@ inspection_data.forEach(myFunction);
         console.log(record["latitude"])
         console.log(record["longitude"])
 //const obj = JSON.parse(inspection_data);
+ const myJSON = JSON.stringify(record["dba_name"]);
        // let stringo = ;
- let contentString = "<p><b>j</b>" ;
+ let contentString = myJSON ;
         
          const infowindow = new google.maps.InfoWindow({
      content: contentString,
